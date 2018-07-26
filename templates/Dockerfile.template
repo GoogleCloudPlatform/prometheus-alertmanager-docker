@@ -17,7 +17,11 @@ RUN set -x && \
     mv alertmanager    /bin/ && \
     mkdir -p /usr/share/doc/alertmanager && \
     mv LICENSE /usr/share/doc/alertmanager/ && \
-    mv simple.yml      /etc/alertmanager/alertmanager.yml && \
+{{- if (eq $alertmanager.Version "0.14.0") }}
+    mv simple.yml /etc/alertmanager/alertmanager.yml && \
+{{- else }}
+    mv alertmanager.yml /etc/alertmanager/alertmanager.yml && \
+{{- end }}
     cd - && \
     rm -r alertmanager-files
 
