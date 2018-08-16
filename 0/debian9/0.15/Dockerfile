@@ -15,7 +15,7 @@ RUN set -x && \
     mv alertmanager    /bin/ && \
     mkdir -p /usr/share/doc/alertmanager && \
     mv LICENSE /usr/share/doc/alertmanager/ && \
-    mv simple.yml      /etc/alertmanager/alertmanager.yml && \
+    mv alertmanager.yml /etc/alertmanager/alertmanager.yml && \
     cd - && \
     rm -r alertmanager-files
 
