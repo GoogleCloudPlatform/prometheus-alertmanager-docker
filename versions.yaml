@@ -19,18 +19,18 @@ versions:
   - dir: '0/debian9/0.15'
     repo: prometheus-alertmanager0
     tags:
-      - '0.15.1-debian9'
+      - '0.15.2-debian9'
       - '0.15-debian9'
       - '0-debian9'
-      - '0.15.1'
+      - '0.15.2'
       - '0.15'
       - '0'
       - 'latest'
     from: *from
     packages:
       alertmanager:
-        version: '0.15.1'
-        sha256: 'd41101d632ccedd45c49f4bf31d9b247502f75f4950be5584429a2156a8c346f'
+        version: '0.15.2'
+        sha256: '79ee23ab2f0444f592051995728ba9e0a7547cc3b9162301e3152dbeaf568d2e'
   - dir: '0/debian9/0.14'
     repo: prometheus-alertmanager0
     tags:
