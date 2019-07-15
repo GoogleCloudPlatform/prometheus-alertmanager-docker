@@ -1,8 +1,8 @@
 FROM gcr.io/google-appengine/debian9
-ENV ALERTMANAGER_VERSION 0.17.0
+ENV ALERTMANAGER_VERSION 0.18.0
 
 ENV ALERTMANAGER_URL="https://github.com/prometheus/alertmanager/releases/download/v$ALERTMANAGER_VERSION/alertmanager-$ALERTMANAGER_VERSION.linux-amd64.tar.gz"
-ENV ALERTMANAGER_SHA256 7c8d2cfeb021c80881ae9904d959131091b8785b6fda9800f84ddef148fe0a4f
+ENV ALERTMANAGER_SHA256 5f17155d669a8d2243b0d179fa46e609e0566876afd0afb09311a8bc7987ab15
 
 RUN set -x && \
     apt-get update && apt-get install -qq -y wget && \

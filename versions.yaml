@@ -16,21 +16,21 @@ _variables:
   from: &from gcr.io/google-appengine/debian9
 
 versions:
-  - dir: '0/debian9/0.17'
+  - dir: '0/debian9/0.18'
     repo: prometheus-alertmanager0
     tags:
-      - '0.17.0-debian9'
-      - '0.17-debian9'
+      - '0.18.0-debian9'
+      - '0.18-debian9'
       - '0-debian9'
-      - '0.17.0'
-      - '0.17'
+      - '0.18.0'
+      - '0.18'
       - '0'
       - 'latest'
     from: *from
     packages:
       alertmanager:
-        version: '0.17.0'
-        sha256: '7c8d2cfeb021c80881ae9904d959131091b8785b6fda9800f84ddef148fe0a4f'
+        version: '0.18.0'
+        sha256: '5f17155d669a8d2243b0d179fa46e609e0566876afd0afb09311a8bc7987ab15'
   - dir: '0/debian9/0.14'
     repo: prometheus-alertmanager0
     tags:
