@@ -13,15 +13,15 @@
 # limitations under the License.
 
 _variables:
-  from: &from gcr.io/google-appengine/debian9
+  from: &from gcr.io/google-appengine/debian11
 
 versions:
-  - dir: '0/debian9/0.24'
+  - dir: '0/debian11/0.24'
     repo: prometheus-alertmanager0
     tags:
-      - '0.24.0-debian9'
-      - '0.24-debian9'
-      - '0-debian9'
+      - '0.24.0-debian11'
+      - '0.24-debian11'
+      - '0-debian11'
       - '0.24.0'
       - '0.24'
       - '0'
@@ -31,15 +31,4 @@ versions:
       alertmanager:
         version: '0.24.0'
         sha256: '6fa982232ae7be5524f5b3cd4e90b7c6a75086368200c917644eaa3e806555dc'
-  - dir: '0/debian9/0.21'
-    repo: prometheus-alertmanager0
-    tags:
-      - '0.21.0-debian9'
-      - '0.21-debian9'
-      - '0.21.0'
-      - '0.21'
-    from: *from
-    packages:
-      alertmanager:
-        version: '0.21.0'
-        sha256: '9ccd863937436fd6bfe650e22521a7f2e6a727540988eef515dde208f9aef232'
+
