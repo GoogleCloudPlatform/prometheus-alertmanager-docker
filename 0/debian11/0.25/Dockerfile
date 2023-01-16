@@ -6,7 +6,7 @@ ENV ALERTMANAGER_URL="https://github.com/prometheus/alertmanager/releases/downlo
 ENV ALERTMANAGER_SHA256 206cf787c01921574ca171220bb9b48b043c3ad6e744017030fed586eb48e04b
 
 RUN set -x && \
-    apt-get update && apt-get install -qq -y wget openssl && \
+    apt-get update && apt-get install -qq -y wget openssl libtasn1-6 && \
     mkdir -p /etc/alertmanager && \
     mkdir alertmanager-files && cd alertmanager-files && \
     wget -O alertmanager.tar.gz "$ALERTMANAGER_URL" && \
