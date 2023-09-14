@@ -16,18 +16,18 @@
 cloudbuild:
   enable_parallel: false
 versions:
-- dir: 0/debian11/0.25
+- dir: 0/debian11/0.26
   from: marketplace.gcr.io/google/c2d-debian11
   packages:
     alertmanager:
-      version: 0.25.0
+      version: 0.26.0
   repo: prometheus-alertmanager0
   tags:
-  - 0.25.0-debian11
-  - 0.25-debian11
+  - 0.26.0-debian11
+  - 0.26-debian11
   - 0-debian11
-  - 0.25.0
-  - '0.25'
+  - 0.26.0
+  - '0.26'
   - '0'
   - latest
 
