@@ -34,4 +34,4 @@ tests:
     - curl -s http://some-prometheus-alertmanager-$UNIQUE-id:9093/api/v2/status
   expect:
     stdout:
-      matches: ".*\"status\":\"success\".*"
+      matches: ".*\"status\":\"ready\".*"
