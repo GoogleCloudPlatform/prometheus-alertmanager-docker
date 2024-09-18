@@ -1,5 +1,5 @@
-FROM marketplace.gcr.io/google/c2d-debian11
-ENV ALERTMANAGER_VERSION 0.26.0
+FROM marketplace.gcr.io/google/c2d-debian12
+ENV ALERTMANAGER_VERSION 0.27.0
 ENV C2D_RELEASE=${ALERTMANAGER_VERSION}
 
 ENV ALERTMANAGER_URL="https://github.com/prometheus/alertmanager/releases/download/v$ALERTMANAGER_VERSION/alertmanager-$ALERTMANAGER_VERSION.linux-amd64.tar.gz"
