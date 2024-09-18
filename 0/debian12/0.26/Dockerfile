@@ -1,4 +1,4 @@
-FROM marketplace.gcr.io/google/c2d-debian12
+FROM marketplace.gcr.io/google/debian12
 ENV ALERTMANAGER_VERSION 0.26.0
 ENV C2D_RELEASE=${ALERTMANAGER_VERSION}
 

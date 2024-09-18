@@ -17,7 +17,7 @@ cloudbuild:
   enable_parallel: false
 versions:
 - dir: 0/debian12/0.27
-  from: marketplace.gcr.io/google/c2d-debian12
+  from: marketplace.gcr.io/google/debian12
   packages:
     alertmanager:
       version: 0.27.0
@@ -31,7 +31,7 @@ versions:
   - '0'
   - latest
 - dir: 0/debian12/0.26
-  from: marketplace.gcr.io/google/c2d-debian12
+  from: marketplace.gcr.io/google/debian12
   packages:
     alertmanager:
       version: 0.26.0
