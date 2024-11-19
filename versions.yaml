@@ -22,6 +22,9 @@ versions:
     alertmanager:
       version: 0.27.0
   repo: prometheus-alertmanager0
+  annotations:
+  - key: com.googleapis.cloudmarketplace.product.service.name
+    value: services/ddf06993-1d47-428e-83b0-9210e0a5ece2.cloudpartnerservices.goog
   tags:
   - 0.27.0-debian12
   - 0.27-debian12
@@ -33,6 +36,9 @@ versions:
 - dir: 0/debian12/0.26
   from: marketplace.gcr.io/google/debian12
   packages:
+  annotations:
+  - key: com.googleapis.cloudmarketplace.product.service.name
+    value: services/ddf06993-1d47-428e-83b0-9210e0a5ece2.cloudpartnerservices.goog
     alertmanager:
       version: 0.26.0
   repo: prometheus-alertmanager0
