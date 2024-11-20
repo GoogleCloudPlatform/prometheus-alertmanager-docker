@@ -14,6 +14,7 @@
 
 
 cloudbuild:
+  docker_image: gcr.io/cloud-builders/docker:24.0.9
   enable_parallel: false
 versions:
 - dir: 0/debian12/0.27
@@ -22,6 +23,9 @@ versions:
     alertmanager:
       version: 0.27.0
   repo: prometheus-alertmanager0
+  annotations:
+  - key: com.googleapis.cloudmarketplace.product.service.name
+    value: services/ddf06993-1d47-428e-83b0-9210e0a5ece2.cloudpartnerservices.goog
   tags:
   - 0.27.0-debian12
   - 0.27-debian12
@@ -35,6 +39,9 @@ versions:
   packages:
     alertmanager:
       version: 0.26.0
+  annotations:
+  - key: com.googleapis.cloudmarketplace.product.service.name
+    value: services/ddf06993-1d47-428e-83b0-9210e0a5ece2.cloudpartnerservices.goog
   repo: prometheus-alertmanager0
   tags:
   - 0.26.0-debian12
